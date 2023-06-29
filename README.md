@@ -1,4 +1,4 @@
-# My Portofolio Website
+# mateipruteanu.dev - my Portofolio website
 ## Technologies Used:
  - `React` for the Frontend
  - `NodeJS` for the Backend.
