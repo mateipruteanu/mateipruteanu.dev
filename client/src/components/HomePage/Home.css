@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost&family=Montserrat:wght@600&display=swap');
+
+:root {
+    --start-color: #45518C;
+    --end-color: #147161;
+    --gradient-direction: 45deg;
+    --background-color: #FCFBFD;
+    --text-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+/*navbar-buttons, name, navbar*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.navbar-buttons {
+    /*    i want them to be in a row*/
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.navbar-button {
+    color: var(--text-color);
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
+}
+
+.name {
+
+}
+
+.button {
+    font-family: 'Jost', 'Inter', sans-serif;
+}
+
+.hero-small-text {
+    font-family: 'Jost', 'Inter', sans-serif;
+}
+
+.main-gradient-button {
+    background: linear-gradient(var(--gradient-direction), var(--start-color), var(--end-color));
+}
+
+.main-gradient-text {
+    background: -webkit-linear-gradient(var(--gradient-direction), var(--end-color), var(--start-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
