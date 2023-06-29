@@ -4,6 +4,8 @@
 import Navbar from "./components/Navbar.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/HomePage/Home.jsx";
+import Projects from "./components/ProjectsPage/Projects.jsx";
+import About from "./components/AboutPage/About.jsx";
 
 
 function App() {
@@ -13,8 +15,8 @@ function App() {
                 <Navbar/>
                 <Routes>
                     <Route exact path={"/"} element={<Home/>}/>
-                    {/*<Route exact path={"/projects"} component={Projects}/>*/}
-                    {/*<Route exact path={"/about"} component={About}/>*/}
+                    <Route exact path={"/projects"} element={<Projects/>}/>
+                    <Route exact path={"/about"} element={<About/>}/>
                 </Routes>
             </div>
         </BrowserRouter>

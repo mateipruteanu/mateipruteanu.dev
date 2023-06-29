@@ -1,0 +1,39 @@
+import React from "react";
+import Card from "./Card.jsx";
+import "../../Default.css";
+import "./Projects.css";
+
+
+function Projects() {
+    class Project {
+        constructor(index, title, languages, description, linkText, linkImage, link) {
+            this.index = index;
+            this.title = title;
+            this.languages = languages;
+            this.description = description;
+            this.linkText = linkText;
+            this.linkImage = linkImage;
+            this.link = link;
+        }
+    }
+
+    const projects = [
+        new Project(1, "CroG", "NodeJS, MySQL, HTML, CSS, JS", "Website for finding resources related to Creative Coding built with HTML, CSS and JS for the frontend and NodeJS for the backend, with a microservice architecture. You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/CroG#readme"),
+        new Project(2, "ReadsProfiler", "C++, QT (GUI)", "Desktop app for searching through a book library, getting personalized recommendations and downloading books from the server (over TCP using sockets). You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/readsProfiler_Client#readme")];
+
+
+    return (
+        <div className={"projects"}>
+            <h1 className={"projects-title"}>Projects</h1>
+            <div className={"projects-cards"}>
+                {projects.map((project) => (
+                    <Card key={project.index} index={project.index} title={project.title} link={project.link}
+                          linkImage={project.linkImage} linkText={project.linkText} description={project.description}
+                          languages={project.languages}/>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Projects;
