@@ -1,4 +1,6 @@
 # mateipruteanu.dev - my Portofolio website
+
+## Deployed at [www.mateipruteanu.dev](https://www.mateipruteanu.dev/) using Vercel.
 ## Technologies Used:
  - `React` for the Frontend
  - `NodeJS` for the Backend.
