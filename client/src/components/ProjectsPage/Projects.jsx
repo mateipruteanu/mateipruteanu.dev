@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card.jsx";
-import "../../Default.css";
-import "./Projects.css";
+import "../../styles/Default.css";
+import "../../styles/Projects.css";
 
 
 function Projects() {

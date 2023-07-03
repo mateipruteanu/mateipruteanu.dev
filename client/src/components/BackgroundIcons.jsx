@@ -1,11 +1,11 @@
-function BackgroundIcons() {
+function BackgroundIcons({className}) {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            width={1445}
-            height={860}
-            fill="none"
+        <svg className={className}
+             xmlns="http://www.w3.org/2000/svg"
+             xmlnsXlink="http://www.w3.org/1999/xlink"
+             width={1445}
+             height={860}
+             fill="none"
         >
             <style>
                 {

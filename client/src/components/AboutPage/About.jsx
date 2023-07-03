@@ -1,6 +1,6 @@
 import React from "react";
-import "../../Default.css";
-import "./About.css";
+import "../../styles/Default.css";
+import "../../styles/About.css";
 
 function About() {
     const heroTextContent = (

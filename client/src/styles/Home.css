@@ -1,0 +1,125 @@
+/*.hero-small-text {*/
+/*    font-family: 'Jost', 'Inter', sans-serif;*/
+/*}*/
+
+/*.main-gradient-button {*/
+/*    background: linear-gradient(var(--gradient-direction), var(--start-color), var(--end-color));*/
+/*}*/
+
+/*.main-gradient-text {*/
+/*    background: -webkit-linear-gradient(var(--gradient-direction), var(--end-color), var(--start-color));*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*}*/
+
+/*Home flex container*/
+body {
+    background-image: url("../assets/background_optimised.svg");
+    background-repeat: repeat;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.memoji {
+    margin-left: auto;
+    margin-top: 20vh;
+    margin-right: 5vw;
+    z-index: 1;
+}
+
+.home-blob {
+    position: fixed;
+    top: -5vh;
+    right: -6vw;
+    height: 55vw;
+    /*width: 40vw;*/
+    z-index: -1;
+}
+
+.bg-icons {
+    position: fixed;
+    top: -10vh;
+    left: 0;
+    width: 100vw;
+    /*height: 100vh;*/
+    z-index: 3;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-image: url("../assets/background.png");
+        background-repeat: repeat;
+    }
+
+    .home-blob {
+        display: none;
+    }
+
+    .home {
+        /*width: 100%;*/
+        top: 10vh;
+    }
+
+    .home-text {
+        width: 87vw !important;
+        top: 10vh;
+    }
+
+    .memoji {
+        display: none;
+    }
+}
+
+
+.home-text {
+    /*font-size: 1.6rem;*/
+    width: 45vw;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 2;
+}
+
+.hero-text {
+    font-size: 3.5rem;
+}
+
+.hero-subtext {
+    font-size: 2.1rem;
+}
+
+.hero-small-text {
+    font-size: 1.45rem;
+    margin-bottom: 3rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-button {
+    margin-right: 1.5rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 7px;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+

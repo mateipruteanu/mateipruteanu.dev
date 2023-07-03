@@ -75,7 +75,7 @@
 }
 
 
-@media (max-width: 672px) {
+@media (max-width: 900px) {
     .menu-icon {
         visibility: visible;
         display: block;

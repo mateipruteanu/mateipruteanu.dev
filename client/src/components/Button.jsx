@@ -11,7 +11,7 @@ function Button({buttonLink, className, buttonText}) {
 
 
     return (
-        <a href={buttonLink} className={combinedClasses}> {buttonText} </a>
+        <a href={buttonLink} className={combinedClasses} target={"_blank"}> {buttonText} </a>
     );
 }
 
