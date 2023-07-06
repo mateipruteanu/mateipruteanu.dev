@@ -42,8 +42,18 @@
 }
 
 .card-button:hover {
-    text-decoration: none;
-    color: black;
+    --project-button-color: #147161;
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 1px var(--project-button-color),
+    2px 2px var(--project-button-color),
+    3px 3px var(--project-button-color),
+    4px 4px var(--project-button-color),
+    5px 5px var(--project-button-color),
+    6px 6px var(--project-button-color),
+    7px 7px var(--project-button-color),
+    8px 8px var(--project-button-color),
+    9px 9px var(--project-button-color);
+    transition: all 0.3s;
 }
 
 .card-title {

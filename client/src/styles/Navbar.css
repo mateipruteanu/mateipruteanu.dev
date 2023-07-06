@@ -28,6 +28,16 @@
     background: -webkit-linear-gradient(var(--gradient-direction), var(--end-color), var(--start-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+.name:hover {
+    background: -webkit-linear-gradient(var(--gradient-direction), var(--start-color), var(--end-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    transition: all 0.3s;
 }
 
 .nav-elements {
@@ -111,4 +121,5 @@
         margin-top: 2rem;
     }
 }
+
 

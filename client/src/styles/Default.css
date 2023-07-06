@@ -96,6 +96,7 @@ select {
     --text-color: #000000;
     --nav-text-color: white;
     --blue-button-color: #DAF2F6;
+    --main-gradient-hover: #162c29;
 }
 
 
@@ -126,12 +127,38 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     padding: 0.75rem 1rem;
     cursor: pointer;
+    box-shadow: 1px 1px var(--main-gradient-hover),
+    2px 2px 1px var(--main-gradient-hover),
+    3px 3px 1px var(--main-gradient-hover);
+    transition: all 0.3s;
+}
+
+.main-gradient-button:hover {
+
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 1px var(--main-gradient-hover),
+    2px 2px var(--main-gradient-hover),
+    3px 3px var(--main-gradient-hover),
+    4px 4px var(--main-gradient-hover),
+    5px 5px var(--main-gradient-hover),
+    6px 6px var(--main-gradient-hover),
+    7px 7px var(--main-gradient-hover),
+    8px 8px var(--main-gradient-hover),
+    9px 9px var(--main-gradient-hover);
+    transition: all 0.3s;
 }
 
 .main-gradient-text {
     background: -webkit-linear-gradient(var(--gradient-direction), var(--end-color), var(--start-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.main-gradient-text:hover {
+    background: -webkit-linear-gradient(var(--gradient-direction), var(--start-color), var(--end-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s;
 }
 
 .blue-button {
@@ -141,4 +168,22 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     padding: 0.75rem 1rem;
     cursor: pointer;
+    box-shadow: 1px 1px var(--end-color),
+    2px 2px 1px var(--end-color),
+    3px 3px 1px var(--end-color);
+    transition: all 0.3s;
+}
+
+.blue-button:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 1px var(--end-color),
+    2px 2px var(--end-color),
+    3px 3px var(--end-color),
+    4px 4px var(--end-color),
+    5px 5px var(--end-color),
+    6px 6px var(--end-color),
+    7px 7px var(--end-color),
+    8px 8px var(--end-color),
+    9px 9px var(--end-color);
+    transition: all 0.3s;
 }
