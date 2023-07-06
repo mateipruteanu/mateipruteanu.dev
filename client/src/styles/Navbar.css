@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    z-index: 999;
 }
 
 .menu-icon {
@@ -20,6 +21,7 @@
     height: 60px;
     background-color: transparent;
     position: relative;
+
 }
 
 .name {
@@ -29,7 +31,6 @@
 }
 
 .nav-elements {
-
 }
 
 .nav-elements ul {
