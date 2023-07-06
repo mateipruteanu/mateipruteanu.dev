@@ -19,12 +19,12 @@ function Projects() {
 
     const projects = [
         new Project(1, "CroG", "NodeJS, MySQL, HTML, CSS, JS", "Website for finding resources related to Creative Coding built with HTML, CSS and JS for the frontend and NodeJS for the backend, with a microservice architecture. You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/CroG#readme"),
-        new Project(2, "ReadsProfiler", "C++, QT (GUI)", "Desktop app for searching through a book library, getting personalized recommendations and downloading books from the server (over TCP using sockets). You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/readsProfiler_Client#readme")];
-
+        new Project(2, "ReadsProfiler", "C++, QT (GUI)", "Desktop app for searching through a book library, getting personalized recommendations and downloading books from the server (over TCP using sockets). You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/readsProfiler_Client#readme"),
+        new Project(3, "Portofolio Website", "ReactJS, HTML, CSS", "My portofolio website (the one you are currently viewing) built using ReactJS, HTML and CSS and is hosted on Vercel. You can find a detailed description of the project and screenshots on GitHub!", "GitHub", "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg", "https://github.com/mateipruteanu/mateipruteanu.dev#readme")
+    ];
 
     return (
         <div className={"projects"}>
-            <h1 className={"projects-title"}>Projects</h1>
             <div className={"projects-cards"}>
                 {projects.map((project) => (
                     <Card key={project.index} index={project.index} title={project.title} link={project.link}
