@@ -19,8 +19,16 @@ function About() {
         "HTML/CSS/JS",
         "Java",
         "Relational DB (MySQL, Oracle...)"];
-    const email = "mateipruteanu1@gmail.com";
-    const phone = "+40 742 042 244";
+    const email = (
+        <a href={"mailto:mateipruteanu1@gmail.com"}>
+            mateipruteanu1@gmail.com
+        </a>
+    );
+    const phone = (
+        <a href={"tel:+40 742 042 244"}>
+            +40 742 042 244
+        </a>
+    );
     const linkedin = "https://www.linkedin.com/in/mateipruteanu/";
 
 
@@ -40,7 +48,7 @@ function About() {
                             ))}
                         </ul>
                     </div>
-                    
+
                     <div className={"contact-div"}>
                         <div className={"contact-container"}>
                             <p className={"contact-text"}>
