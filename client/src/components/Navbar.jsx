@@ -42,7 +42,7 @@ function Navbar() {
     return (
         <nav className={"navbar"}>
             <div className={"container"}>
-                <h1 className={"name"}> mateipruteanu_ </h1>
+                <a href={"/"} className={"name"}><h1>mateipruteanu_</h1></a>
                 <div className={"menu-icon"} onClick={handleShowNavbar}>
                     <FontAwesomeIcon icon={showNavbar ? faXmark : faBars}/>
                 </div>

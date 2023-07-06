@@ -45,9 +45,9 @@
 
 .nav-elements ul a {
     font-size: 1rem;
-    font-weight: 400;
     color: var(--nav-text-color);
     text-decoration: none;
+    font-weight: 700;
 }
 
 .nav-elements ul a.blue-button {
@@ -61,7 +61,7 @@
 
 .nav-elements ul a.active {
     color: var(--nav-text-color);
-    font-weight: 500;
+    font-weight: 800;
     position: relative;
 }
 
