@@ -1,4 +1,5 @@
 import React from "react";
+import AboutBlob from "./AboutBlob.jsx";
 import "../../styles/Default.css";
 import "../../styles/About.css";
 
@@ -24,25 +25,41 @@ function About() {
 
 
     return (
-        <div className={"about"}>
-            <h1 className="hero-text">{heroTextContent}</h1>
-            <h3 className="hero-subtext">{heroSubtextContent}</h3>
-            <h2 className={"technologies-title"}>Technologies / Languages I’m comfortable with:</h2>
-            <ul className={"technologies-list"}>
-                {technologies.map((technology, index) => (
-                    <li key={index} className={"technology"}>{technology}</li>
-                ))}
-            </ul>
-
-            <p className={"contact-text"}>
-                You can contact me by <span
-                className={"main-gradient-text"}>email</span>: &lt; {email} &gt;
-                by <span className={"main-gradient-text"}>phone</span>: &lt; {phone} &gt;
-                or on <a target="_blank" className={"main-gradient-text"}
-                         href={linkedin}>LinkedIn</a>.
-            </p>
-
-        </div>
+        <>
+            <div className={"about-page"}>
+                <div className={"about-container"}>
+                    <div className={"about-information-div"}>
+                        <h1 className="hero-text">{heroTextContent}</h1>
+                        <h3 className="hero-subtext">{heroSubtextContent}</h3>
+                    </div>
+                    <div className={"technologies-div"}>
+                        <h2 className={"technologies-title"}>Technologies / Languages I’m comfortable with:</h2>
+                        <ul className={"technologies-list"}>
+                            {technologies.map((technology, index) => (
+                                <li key={index} className={"technology"}>{technology}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    
+                    <div className={"contact-div"}>
+                        <div className={"contact-container"}>
+                            <p className={"contact-text"}>
+                                <span
+                                    className={"main-gradient-text"}>Email</span>: &lt; {email} &gt;
+                            </p>
+                            <p className={"contact-text"}>
+                                <span className={"main-gradient-text"}>Phone</span>: &lt; {phone} &gt;
+                            </p>
+                            <p className={"contact-text"}>
+                                <a target="_blank" className={"blue-button"}
+                                   href={linkedin}>LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <AboutBlob className={"aboutBlob"}/>
+        </>
     );
 }
 

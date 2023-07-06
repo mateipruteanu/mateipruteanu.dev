@@ -1,0 +1,108 @@
+.about-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+    height: 80%;
+    color: white;
+}
+
+.about-information-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: black 1px solid;
+    box-shadow: inset 5px 5px 1px 2px rgba(0, 0, 0, 0.31);
+}
+
+.contact-text:not(:first-child) {
+    margin-bottom: 15px;
+
+}
+
+.aboutBlob {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-container {
+        width: 95%;
+        height: 100%;
+        color: black;
+        padding: 20px;
+    }
+
+    .technologies-div {
+        padding: 10px;
+        background-color: var(--blue-button-color);
+        border: black 1px solid;
+        border-radius: 20px;
+    }
+
+    .about-information-div {
+        align-items: center;
+    }
+
+    .contact-div {
+        margin-top: 40px;
+    }
+
+    .aboutBlob {
+        display: none;
+    }
+
+    .italic-bold-text {
+        font-weight: bold;
+        background: -webkit-linear-gradient(var(--gradient-direction), var(--end-color), var(--start-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-subtext {
+        font-size: 1.8rem !important;
+    }
+
+    .hero-small-text {
+        font-size: 1.2rem !important;
+    }
+}
