@@ -27,7 +27,9 @@ function Navbar() {
 
         // for mobile navbar
         if (window.innerWidth < 672) {
-            setColor("#ffffff") // white
+            setColor("#000000") // black
+            document.querySelector(".blue-button").classList.add("main-gradient-button");
+            document.querySelector(".blue-button").style.color = "#ffffff";
         }
 
     }, [location, window]);
