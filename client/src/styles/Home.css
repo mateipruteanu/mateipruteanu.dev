@@ -21,7 +21,6 @@ body {
 }
 
 .memoji:hover {
-    /*    make it smaller and rotate it*/
     transform: scale(0.95) rotate(-5deg);
     transition: transform 0.2s ease-in-out;
 }

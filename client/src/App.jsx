@@ -6,7 +6,20 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/HomePage/Home.jsx";
 import Projects from "./components/ProjectsPage/Projects.jsx";
 import About from "./components/AboutPage/About.jsx";
+import * as insights from "insights-js";
+import {parameters} from "insights-js";
 
+// tracking page views
+insights.init('SIbKVeVXPwRxphQW');
+insights.trackPages();
+insights.track({
+    id: "open-page",
+    parameters: {
+        path: parameters.path(),
+        screenType: parameters.screenType(),
+        referrer: parameters.referrer()
+    }
+});
 
 function App() {
     return (
