@@ -93,4 +93,8 @@ span {
         width: 300px;
         height: auto;
     }
+
+    .projects-cards {
+        width: 100%;
+    }
 }
