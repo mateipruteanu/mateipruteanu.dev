@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card.jsx";
 import "../../styles/Default.css";
 import "../../styles/Projects.css";
+import Navbar from "../Navbar.jsx";
 
 
 function Projects() {
@@ -24,15 +25,19 @@ function Projects() {
     ];
 
     return (
-        <div className={"projects"}>
-            <div className={"projects-cards"}>
-                {projects.map((project) => (
-                    <Card key={project.index} index={project.index} title={project.title} link={project.link}
-                          linkImage={project.linkImage} linkText={project.linkText} description={project.description}
-                          languages={project.languages}/>
-                ))}
+        <>
+            <Navbar/>
+            <div className={"projects"}>
+                <div className={"projects-cards"}>
+                    {projects.map((project) => (
+                        <Card key={project.index} index={project.index} title={project.title} link={project.link}
+                              linkImage={project.linkImage} linkText={project.linkText}
+                              description={project.description}
+                              languages={project.languages}/>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

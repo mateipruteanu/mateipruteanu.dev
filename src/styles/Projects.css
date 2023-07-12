@@ -1,4 +1,9 @@
 /* container for all cards */
+.projects {
+    position: relative;
+    top: 60px;
+}
+
 .projects-cards {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +11,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 1rem;
-    width: 100%;
+    width: 80%;
     height: 100%;
 
 }

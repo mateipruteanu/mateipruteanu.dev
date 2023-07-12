@@ -2,6 +2,7 @@ import React from "react";
 import AboutBlob from "./AboutBlob.jsx";
 import "../../styles/Default.css";
 import "../../styles/About.css";
+import Navbar from "../Navbar.jsx";
 
 function About() {
     const heroTextContent = (
@@ -34,6 +35,7 @@ function About() {
 
     return (
         <>
+            <Navbar/>
             <div className={"about-page"}>
                 <div className={"about-container"}>
                     <div className={"about-information-div"}>

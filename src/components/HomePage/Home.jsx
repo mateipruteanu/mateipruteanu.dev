@@ -1,16 +1,18 @@
 import Button from "../Button.jsx";
 import HomeBlob from "./HomeBlob.jsx";
 import Memoji from "./Memoji.jsx";
-import BackgroundIcons from "../BackgroundIcons.jsx";
-
 import "../../styles/Home.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import Navbar from "../Navbar.jsx";
+import React from "react";
 
 
 function Home() {
     return (
         <div className={"home"}>
+            <HomeBlob className={"home-blob"}/>
+            <Navbar/>
             <div className={"home-text"}>
                 <h1 className={"hero-text"}>Hi there 👋🏼, I'm <span className={"main-gradient-text"}>Matei!</span></h1>
                 <h3 className={"hero-subtext"}>I’m a <span
@@ -34,9 +36,7 @@ function Home() {
                     </a>
                 </div>
             </div>
-            <HomeBlob className={"home-blob"}/>
             <Memoji className={"memoji"}/>
-            {/*<BackgroundIcons classname={"bg-icons"}/>*/}
         </div>
     )
 }
