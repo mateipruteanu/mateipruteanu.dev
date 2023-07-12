@@ -20,8 +20,11 @@
 .navbar {
     height: 60px;
     background-color: transparent;
-    position: relative;
-
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .name {
@@ -122,4 +125,13 @@
     }
 }
 
+
+.home-blob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*width: max(500px, 25%);*/
+    /*min-width: 500px;*/
+    z-index: -1;
+}
 
