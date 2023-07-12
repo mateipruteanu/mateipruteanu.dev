@@ -26,11 +26,11 @@ body {
 }
 
 .home-blob {
-    position: fixed;
-    top: -5vh;
-    right: -6vw;
-    height: 55vw;
-    /*width: 40vw;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*width: max(500px, 25%);*/
+    /*min-width: 500px;*/
     z-index: -1;
 }
 
