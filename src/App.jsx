@@ -6,9 +6,11 @@ import About from './components/AboutPage/About.jsx';
 import './styles/App.css';
 import * as insights from 'insights-js';
 import {parameters} from 'insights-js';
+import {inject} from "@vercel/analytics";
 import Loading from "./components/Loading.jsx";
 
 // tracking page views
+inject();
 insights.init('SIbKVeVXPwRxphQW');
 insights.trackPages();
 insights.track({
