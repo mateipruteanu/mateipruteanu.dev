@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import Navbar from "../Navbar.jsx";
 import React from "react";
+import Ellipse from "./Ellipse.jsx";
 
 
 function Home() {
@@ -36,6 +37,7 @@ function Home() {
                     </a>
                 </div>
             </div>
+            <Ellipse className={"ellipse"}/>
             <Memoji className={"memoji"}/>
         </div>
     )
