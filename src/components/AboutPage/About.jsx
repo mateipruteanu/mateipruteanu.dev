@@ -16,9 +16,9 @@ function About() {
         </>);
     const technologies = [
         "React",
+        "Java (Maven, Spring Boot, JPA)",
         "NodeJS",
         "HTML/CSS/JS",
-        "Java",
         "Relational DB (MySQL, Oracle...)"];
     const email = (
         <a href={"mailto:mateipruteanu1@gmail.com"}>

@@ -12,7 +12,7 @@ function Card({index, title, languages, description, linkText, linkImage, link})
         });
     };
 
-    const keywords = ["HTML", "CSS", "JS", "NodeJS", "microservice", "architecture", "screenshots", "GitHub", "personalized", "recommendations", "downloading", "TCP", "ReactJS", "Vercel"];
+    const keywords = ["HTML", "CSS", "JS", "NodeJS", "microservice", "architecture", "screenshots", "GitHub", "personalized", "recommendations", "downloading", "TCP", "ReactJS", "Vercel", "Java", "RESTful", "API", "Spring Security", "JWTs", "MySQL"];
 
     return (
         <div className={"card " + "card_" + index}>
