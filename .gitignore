@@ -13,8 +13,8 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.memoji
-.memoji/*
+memoji/
+memoji/*
 .vscode/*
 !.vscode/extensions.json
 .idea
