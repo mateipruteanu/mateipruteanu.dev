@@ -21,7 +21,7 @@ function About() {
         "HTML/CSS/JS",
         "Relational DB (MySQL, Oracle...)"];
     const email = (
-        <a href={"mailto:mateipruteanu1@gmail.com"}>
+        <a href={"mailto: hi@mateipruteanu.dev"}>
             mateipruteanu1@gmail.com
         </a>
     );
