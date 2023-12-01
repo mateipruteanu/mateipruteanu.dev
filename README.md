@@ -1,10 +1,6 @@
 # mateipruteanu.dev - my Portofolio website
+#### Built with `React`.
 Deployed at [www.mateipruteanu.dev](https://www.mateipruteanu.dev/) using Vercel.
-### Technology Used:
- - `React` for the Frontend
-
-Planning to migrate to `NextJS` in the future.
-
 
 ## Preview
 You can `check out my design` on [Figma](https://www.figma.com/proto/v81hNqOEpHg51FkXxU9iM4/Portofolio-Website?type=design&node-id=2-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=18%3A5&mode=design), or just [visit the website](https://www.mateipruteanu.dev/).
