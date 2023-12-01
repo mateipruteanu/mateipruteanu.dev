@@ -15,11 +15,12 @@ function About() {
             UAIC, Iași.
         </>);
     const technologies = [
+        "NodeJS (TypeScript, Express, PrismaORM)",
+        "Jest, Swagger",
         "React",
         "Java (Maven, Spring Boot, JPA)",
-        "NodeJS",
         "HTML/CSS/JS",
-        "Relational DB (MySQL, Oracle...)"];
+        "Relational DB (MySQL, Postgres,Oracle...)"];
     const email = (
         <a href={"mailto: hi@mateipruteanu.dev"}>
             mateipruteanu1@gmail.com
