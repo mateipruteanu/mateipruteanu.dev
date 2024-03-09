@@ -172,6 +172,7 @@ body::-webkit-scrollbar {
     2px 2px 1px var(--end-color),
     3px 3px 1px var(--end-color);
     transition: all 0.3s;
+    margin-left: 15px;
 }
 
 .blue-button:hover {

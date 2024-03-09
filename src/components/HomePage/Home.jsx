@@ -21,7 +21,7 @@ function Home() {
                 <h3 className={"hero-subtext"}> and Computer Science student.</h3>
                 <div className={"hero-small-text"}>Interested in Web Development and Online Privacy.</div>
                 <div className={"hero-buttons"}>
-                    <Button buttonLink={"mailto: hi@mateipruteanu.dev"}
+                    <Button buttonLink={"mailto: mateipruteanu1@gmail.com"}
                             className={"main-gradient-button hero-button"}
                             buttonText={"GET IN TOUCH"}/>
 

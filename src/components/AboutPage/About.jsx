@@ -2,6 +2,7 @@ import React from "react";
 import AboutBlob from "./AboutBlob.jsx";
 import "../../styles/Default.css";
 import "../../styles/About.css";
+import pdf from "../../assets/CV_Matei_Pruteanu.pdf"
 import Navbar from "../Navbar.jsx";
 
 function About() {
@@ -15,14 +16,14 @@ function About() {
             UAIC, Iași.
         </>);
     const technologies = [
-        "NodeJS (TypeScript, Express, PrismaORM)",
+        "NodeJS, NestJS (TypeScript, Express, PrismaORM)",
         "Jest, Swagger",
         "React",
         "Java (Maven, Spring Boot, JPA)",
         "HTML/CSS/JS",
         "Relational DB (MySQL, Postgres,Oracle...)"];
     const email = (
-        <a href={"mailto: hi@mateipruteanu.dev"}>
+        <a href={"mailto: mateipruteanu1@gmail.com"}>
             mateipruteanu1@gmail.com
         </a>
     );
@@ -40,7 +41,7 @@ function About() {
             <div className={"about-page"}>
                 <div className={"about-container"}>
                     <div className={"about-information-div"}>
-                        <h1 className="hero-text">{heroTextContent}</h1>
+                         <h1 className="hero-text">{heroTextContent}</h1>
                         <h3 className="hero-subtext">{heroSubtextContent}</h3>
                     </div>
                     <div className={"technologies-div"}>
@@ -64,6 +65,8 @@ function About() {
                             <p className={"contact-text"}>
                                 <a target="_blank" className={"blue-button"}
                                    href={linkedin}>LinkedIn</a>
+                                <a target="_blank" className={"blue-button"}
+                                   href={pdf}>My Resume</a>
                             </p>
                         </div>
                     </div>
