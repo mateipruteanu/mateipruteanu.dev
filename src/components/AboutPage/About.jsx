@@ -12,13 +12,13 @@ function About() {
         </>);
     const heroSubtextContent = (
         <>
-            I am a 3rd year student at the <span className={"italic-bold-text"}>Faculty of Computer Science</span>,
+            I am FullStack Developer and graduate from the <span className={"italic-bold-text"}>Faculty of Computer Science</span>,
             UAIC, Iași.
         </>);
     const technologies = [
         "NodeJS, NestJS (TypeScript, Express, PrismaORM)",
+        "React, NextJS",
         "Jest, Swagger",
-        "React",
         "Java (Maven, Spring Boot, JPA)",
         "HTML/CSS/JS",
         "Relational DB (MySQL, Postgres,Oracle...)"];
