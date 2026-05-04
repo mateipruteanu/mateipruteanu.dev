@@ -1,13 +1,16 @@
 import {
-  Geist,
   Geist_Mono,
   Noto_Sans,
   Playfair_Display,
 } from "next/font/google"
+import { notFound } from "next/navigation"
 
-import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { i18n } from "@/i18n-config"
 import { cn } from "@/lib/utils"
+
+import "../globals.css"
+import { hasLocale } from "./dictionaries"
 
 const playfairDisplayHeading = Playfair_Display({
   subsets: ["latin"],
@@ -21,14 +24,21 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return i18n.locales.map((lang) => ({ lang }))
+}
+
+export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  params,
+}: LayoutProps<"/[lang]">) {
+  const { lang } = await params
+
+  if (!hasLocale(lang)) notFound()
+
   return (
     <html
-      lang="en"
+      lang={lang}
       suppressHydrationWarning
       className={cn(
         "antialiased",

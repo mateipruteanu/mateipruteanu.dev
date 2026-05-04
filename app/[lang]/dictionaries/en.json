@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Project ready!",
+    "description": "You may now add components and start building.",
+    "componentsAdded": "We've already added the button component for you.",
+    "buttonLabel": "Button",
+    "themeHint": "(Press d to toggle dark mode)"
+  }
+}

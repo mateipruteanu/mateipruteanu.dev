@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Proiect pregatit!",
+    "description": "Acum poti adauga componente si poti incepe sa construiesti.",
+    "componentsAdded": "Am adaugat deja componenta de buton pentru tine.",
+    "buttonLabel": "Buton",
+    "themeHint": "(Apasa d pentru a comuta modul intunecat)"
+  }
+}
